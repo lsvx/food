@@ -1,0 +1,277 @@
+// JSON File
+
+[
+
+	// ############################################
+	// ################## Beef ####################
+	// ############################################
+	{
+		"protein id": "",
+		"protein common name": "",
+		"protein species name": "",
+		"protein type/group": "",
+
+		"protein nutrient details": 
+			[
+				{ "protein nutrient score": "" }
+				{ "protein content per volume (g/100g)": "" }
+				{ "protein calories (g/100g)": "" }
+			],
+
+		"protein environment details":
+			[
+				{ "protein environmental score": "" }
+				{ "protein water footprint per unit of nutritional value (quarts/kcal)": "" }
+				{ "protein CO2 emission per (CO2/kcal)": "" }
+			],
+
+		"protein price details":
+			[
+				{ "protein price score": "" }
+				{ "protein price ($/lb)": "" }
+			]
+	},
+
+	// ###############################################
+	// ################## Chicken ####################
+	// ###############################################
+	{
+		"protein id": "",
+		"protein common name": "",
+		"protein species name": "",
+		"protein type/group": "",
+
+		"protein nutrient details": 
+			[
+				{ "protein nutrient score": "" }
+				{ "protein content per volume (g/100g)": "" }
+				{ "protein calories (g/100g)": "" }
+			],
+
+		"protein environment details":
+			[
+				{ "protein environmental score": "" }
+				{ "protein water footprint per unit of nutritional value (quarts/kcal)": "" }
+				{ "protein CO2 emission per (CO2/kcal)": "" }
+			],
+
+		"protein price details":
+			[
+				{ "protein price score": "" }
+				{ "protein price ($/lb)": "" }
+			]
+	},
+
+	// ###############################################
+	// ################## Chickpeas ##################
+	// ###############################################
+	{
+		"protein id": "",
+		"protein common name": "",
+		"protein species name": "",
+		"protein type/group": "",
+
+		"protein nutrient details": 
+			[
+				{ "protein nutrient score": "" }
+				{ "protein content per volume (g/100g)": "" }
+				{ "protein calories (g/100g)": "" }
+			],
+
+		"protein environment details":
+			[
+				{ "protein environmental score": "" }
+				{ "protein water footprint per unit of nutritional value (quarts/kcal)": "" }
+				{ "protein CO2 emission per (CO2/kcal)": "" }
+			],
+
+		"protein price details":
+			[
+				{ "protein price score": "" }
+				{ "protein price ($/lb)": "" }
+			]
+	},
+
+	// ##############################################
+	// ################## Crickets ################## 
+	// ##############################################
+	{
+		"protein id": "",
+		"protein common name": "",
+		"protein species name": "",
+		"protein type/group": "",
+
+		"protein nutrient details": 
+			[
+				{ "protein nutrient score": "" }
+				{ "protein content per volume (g/100g)": "" }
+				{ "protein calories (g/100g)": "" }
+			],
+
+		"protein environment details":
+			[
+				{ "protein environmental score": "" }
+				{ "protein water footprint per unit of nutritional value (quarts/kcal)": "" }
+				{ "protein CO2 emission per (CO2/kcal)": "" }
+			],
+
+		"protein price details":
+			[
+				{ "protein price score": "" }
+				{ "protein price ($/lb)": "" }
+			]
+	},
+
+	// ##########################################
+	// ################## Pork ################## 
+	// ##########################################
+	{
+		"protein id": "",
+		"protein common name": "",
+		"protein species name": "",
+		"protein type/group": "",
+
+		"protein nutrient details": 
+			[
+				{ "protein nutrient score": "" }
+				{ "protein content per volume (g/100g)": "" }
+				{ "protein calories (g/100g)": "" }
+			],
+
+		"protein environment details":
+			[
+				{ "protein environmental score": "" }
+				{ "protein water footprint per unit of nutritional value (quarts/kcal)": "" }
+				{ "protein CO2 emission per (CO2/kcal)": "" }
+			],
+
+		"protein price details":
+			[
+				{ "protein price score": "" }
+				{ "protein price ($/lb)": "" }
+			]
+	},
+
+	// ############################################
+	// ################## Salmon ##################
+	// ############################################
+	{
+		"protein id": "",
+		"protein common name": "",
+		"protein species name": "",
+		"protein type/group": "",
+
+		"protein nutrient details": 
+			[
+				{ "protein nutrient score": "" }
+				{ "protein content per volume (g/100g)": "" }
+				{ "protein calories (g/100g)": "" }
+			],
+
+		"protein environment details":
+			[
+				{ "protein environmental score": "" }
+				{ "protein water footprint per unit of nutritional value (quarts/kcal)": "" }
+				{ "protein CO2 emission per (CO2/kcal)": "" }
+			],
+
+		"protein price details":
+			[
+				{ "protein price score": "" }
+				{ "protein price ($/lb)": "" }
+			]
+	},
+
+	// #############################################
+	// ################## Soybean ##################
+	// #############################################
+	{
+		"protein id": "",
+		"protein common name": "",
+		"protein species name": "",
+		"protein type/group": "",
+
+		"protein nutrient details": 
+			[
+				{ "protein nutrient score": "" }
+				{ "protein content per volume (g/100g)": "" }
+				{ "protein calories (g/100g)": "" }
+			],
+
+		"protein environment details":
+			[
+				{ "protein environmental score": "" }
+				{ "protein water footprint per unit of nutritional value (quarts/kcal)": "" }
+				{ "protein CO2 emission per (CO2/kcal)": "" }
+			],
+
+		"protein price details":
+			[
+				{ "protein price score": "" }
+				{ "protein price ($/lb)": "" }
+			]
+	},
+
+	// #############################################
+	// ################## Tilapia ##################
+	// #############################################
+	{
+		"protein id": "",
+		"protein common name": "",
+		"protein species name": "",
+		"protein type/group": "",
+
+		"protein nutrient details": 
+			[
+				{ "protein nutrient score": "" }
+				{ "protein content per volume (g/100g)": "" }
+				{ "protein calories (g/100g)": "" }
+			],
+
+		"protein environment details":
+			[
+				{ "protein environmental score": "" }
+				{ "protein water footprint per unit of nutritional value (quarts/kcal)": "" }
+				{ "protein CO2 emission per (CO2/kcal)": "" }
+			],
+
+		"protein price details":
+			[
+				{ "protein price score": "" }
+				{ "protein price ($/lb)": "" }
+			]
+	},
+
+	// ##########################################
+	// ################## Tuna ##################
+	// ##########################################
+	{
+		"protein id": "",
+		"protein common name": "",
+		"protein species name": "",
+		"protein type/group": "",
+
+		"protein nutrient details": 
+			[
+				{ "protein nutrient score": "" }
+				{ "protein content per volume (g/100g)": "" }
+				{ "protein calories (g/100g)": "" }
+			],
+
+		"protein environment details":
+			[
+				{ "protein environmental score": "" }
+				{ "protein water footprint per unit of nutritional value (quarts/kcal)": "" }
+				{ "protein CO2 emission per (CO2/kcal)": "" }
+			],
+
+		"protein price details":
+			[
+				{ "protein price score": "" }
+				{ "protein price ($/lb)": "" }
+			]
+	}
+]
+
+
+
