@@ -1,0 +1,35 @@
+.comparison-head {
+}
+
+.comparison-title {
+    display: inline-block;
+}
+
+.comparison-icon {
+    display: inline-block;
+    height: 3em;
+    margin-bottom: 1.5em;
+}
+
+.comparison-price {
+    font-size: 5em;
+    display: block;
+}
+
+.comparison-graphic {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+}
+
+.graphic-image {
+    width: 100%;
+}
+
+.comparison-caption {
+    clear: both;
+}
+
+.center {
+    text-align: center;
+}

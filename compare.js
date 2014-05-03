@@ -38,7 +38,7 @@
     };
 
     Compare.prototype.proteinTemplate = function(protein) {
-        return _.template('<div class="comparison-item"><div class="comparison-head"><h1><%- name %></h1><img src="<%- icon %>" /></div><div class="comparison-criterion"><span class="comparison-text">$<%- price %>per pound</span></div><div class="comparison-criterion"><span class="criterion-title">Protein Content</span><img class="comparison-graph" src="<%- graphSRC %>" /><span class="comparison-text"><%- protein %>gr per 100gr</span></div></div>', protein);
+        return _.template('<div class="comparison-item"><div class="comparison-head center"><h1 class="comparison-title center"><%- name %></h1><img class="comparison-icon" src="<%- icon %>" /></div><div class="comparison-criterion"><p class="comparison-text center"><span class="comparison-price">$<%- price %></span>per pound</p></div><div class="comparison-criterion"><h3 class="criterion-title">Protein Content</h3><div class="center"><div class="comparison-graphic"><img class="comparison-graph graphic-image" src="<%- graphSRC %>" /><span class="comparison-text graphic-caption"><%- protein %>gr per 100gr</span></div></div></div></div>', protein);
     };
 
     window.Compare = Compare;
