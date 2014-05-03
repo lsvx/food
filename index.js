@@ -1,38 +1,3 @@
-var data = [
-    {
-        icon: 'chicken.png',
-        text: 'tuna'
-    },
-    {
-        icon: 'chicken.png',
-        text: 'soy bean'
-    },
-    {
-        icon: 'chicken.png',
-        text: 'chicken'
-    },
-    {
-        icon: 'chicken.png',
-        text: 'pork'
-    },
-    {
-        icon: 'chicken.png',
-        text: 'beef'
-    },
-    {
-        icon: 'chicken.png',
-        text: 'salmon'
-    },
-    {
-        icon: 'chicken.png',
-        text: 'cricket'
-    },
-    {
-        icon: 'chicken.png',
-        text: 'chickpea'
-    }
-];
-
 function ChoiceViewModel(parent, data) {
     var self = this;
 
@@ -49,7 +14,7 @@ function IndexViewModel() {
     var self = this;
 
     self.choiceModels = ko.computed(function() {
-        var foodChoices = data;
+        var foodChoices = protein;
         var choices = [];
 
         for (var i = 0; i < foodChoices.length; i++) {

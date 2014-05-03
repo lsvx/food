@@ -17,7 +17,7 @@
                 <div data-bind="foreach: $data">
                     <div class="col-xs-6 food-choice" data-bind="if: $data !== null, click: click, css: { 'choice-left': $index() === 0, 'coice-right': $index() === 1, 'choice-selected': selected }, style: { 'background-image': 'url(' + $data.data.icon + ')' }">
                         <div class="food-details">
-                            <h2 data-bind="text: $data.data.text"></h2>
+                            <h2 data-bind="text: $data.data.protein_common_name"></h2>
                         </div>
                                                 
                         <div data-bind="if: selected" style="position: absolute; bottom: 5px; right: 5px">
@@ -34,7 +34,7 @@
     <script src="jquery-2.1.1.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="knockout-3.1.0.debug.js"></script>
-    <script type="text/javascript" src="food.js"></script>
+    <script src="data/protein.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
