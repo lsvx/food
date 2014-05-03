@@ -22,9 +22,7 @@
   "author": "lsvx",
   "license": "",
   "devDependencies": {
-    "backbone": "^1.1.2",
     "jquery": "^2.1.0",
-    "backbone.layoutmanager": "^0.9.5",
     "gulp-uglify": "^0.2.1",
     "gulp-concat": "^2.1.7",
     "gulp": "^3.5.5",
