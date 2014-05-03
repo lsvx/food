@@ -1,0 +1,33 @@
+// JSON File
+
+[
+	{
+		"protein id": "",
+		"protein common name": "",
+		"protein species name": "",
+		"protein type/group": "",
+
+		"protein nutrient details": 
+			[
+				{ "protein nutrient score": "" }
+				{ "protein content per volume (g/100g)": "" }
+				{ "protein calories (g/100g)": "" }
+			],
+
+		"protein environment details":
+			[
+				{ "protein environmental score": "" }
+				{ "protein water footprint per unit of nutritional value (quarts/kcal)": "" }
+				{ "protein CO2 emission per (CO2/kcal)": "" }
+			],
+
+		"protein price details":
+			[
+				{ "protein price score": "" }
+				{ "protein price ($/lb)": "" }
+			]
+	}
+]
+
+
+
