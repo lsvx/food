@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Proteins Guide</h1>
+        <div class="food-options" data-bind="foreach: foodGrid">
+            <div class="row food-row">
+                <div data-bind="foreach: $data">
+                    <div class="col-xs-6 food-choice" data-bind="if: $data !== null, click: click, css: { 'choice-left': $index() === 0, 'coice-right': $index() === 1, 'choice-selected': selected }, style: { 'background-image': 'url(' + $data.data.icon + ')' }">
+                        <div class="food-details">
+                            <h2 data-bind="text: $data.data.text"></h2>
+                        </div>
+                                                
+                        <div data-bind="if: selected" style="position: absolute; bottom: 5px; right: 5px">
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>                       
+        </div>
+        <div class="row food-row">
+        </div>
+    </div>    
+
+    <script src="jquery-2.1.1.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="knockout-3.1.0.debug.js"></script>
+    <script type="text/javascript" src="food.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.food-choice {
+    background: gray;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 160px;
+    min-height: 160px;
+}
+
+.food-details {    
+}
+
+.food-ranks {
+    border-top: 1px solid black;
+}
+
+.divider-right {
+    border-right: 1px solid black;
+}
+
+.food-row {
+    border-top: 5px solid red;    
+}
+
+.choice-left {
+    border-right: 5px solid red;
+}
+
+.choice-right {
+    border-left: 5px solid red;
+}
+
+.choice-selected {
+    background: yellow;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
