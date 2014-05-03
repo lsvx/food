@@ -1,3 +1,1 @@
-# food
-
-a [Sails](http://sailsjs.org) application
+# FOOD HACKATHON WASSUP
