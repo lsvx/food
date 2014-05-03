@@ -34,11 +34,12 @@
             this.el.append(this.proteinTemplate(pro));
         }
 
+        $('.comparison-item').css('width', 100/this.proteins.length + '%');
         return this;
     };
 
     Compare.prototype.proteinTemplate = function(protein) {
-        return _.template('<div class="comparison-item"><div class="comparison-head center"><h1 class="comparison-title center"><%- name %></h1><img class="comparison-icon" src="<%- icon %>" /></div><div class="comparison-criterion"><p class="comparison-text center"><span class="comparison-price">$<%- price %></span>per pound</p></div><div class="comparison-criterion"><h3 class="criterion-title">Protein Content</h3><div class="center"><div class="comparison-graphic"><img class="comparison-graph graphic-image" src="<%- graphSRC %>" /><span class="comparison-text graphic-caption"><%- protein %>gr per 100gr</span></div></div></div></div>', protein);
+        return _.template('<div class="comparison-item"><div class="comparison-head center"><h1 class="comparison-title center"><%- name %></h1><img class="comparison-icon" src="<%- icon %>" /></div><div class="comparison-criterion"><p class="comparison-text center"><span class="comparison-big">$<%- price %></span>per pound</p></div><div class="comparison-criterion"><h3 class="criterion-title">Protein Content</h3><div class="center"><div class="comparison-graphic"><img class="comparison-graph graphic-image" src="<%- graphSRC %>" /><span class="comparison-text graphic-caption"><%- protein %>gr per 100gr</span></div></div><h3 class="criterion-title">Environment</h3><h4>Carbon Emission</h4><p class="comparison-text center"><span class="comparison-big"><%- carbon %></span>kg</p></div></div>', protein);
     };
 
     window.Compare = Compare;
