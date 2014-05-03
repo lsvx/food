@@ -1,6 +1,12 @@
 .comparison-head {
 }
 
+.comparison-item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 2em;
+}
+
 .comparison-title {
     display: inline-block;
 }
@@ -11,9 +17,10 @@
     margin-bottom: 1.5em;
 }
 
-.comparison-price {
-    font-size: 5em;
+.comparison-big {
     display: block;
+    font-size: 5em;
+    line-height: 1;
 }
 
 .comparison-graphic {
