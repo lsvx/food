@@ -1,30 +1,15 @@
 "use strict";
 var _ = require('lodash'),
-    $ = require('jquery'),
-    proteins = [
-        {
-            name: 'chickpea',
-            rating: 0.25,
-            src: 'http://img.chinaypages.com/photo/11632556/Chickpea.jpg'
-        },
-        {
-            name: 'pork',
-            rating: 0.5,
-            src: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlOl6gMyL5gIzf5JFhPHZ5DYGF5CxWr-aVwM4W95R5tKfxuPs-'
-        }
-    ];
-
-for (var i = 0; i < proteins.length; i++) {
-    proteins[i].rating = proteins[i].rating * 100;
-}
+    $ = require('jquery');
 
 /**
  * Create a new comparison.
  * @constructor
  * @param {HTMLNode} el - HTML elememnt to hold the comparison
+ * @param {array} proteins - An array of proteins to compare
  * @returns a new Slider instance
  */
-var Slider = function(el) {
+var Slider = function(el, proteins) {
     if (!(this instanceof Slider)) return new Slider(el);
 
     this.parent = $(el);
@@ -33,13 +18,21 @@ var Slider = function(el) {
      */
     this.el = $('<div class="slider">');
 
+    for (var key in proteins) {
+        proteins[key].rating = 100 - proteins[key].rating * 100;
+    }
+    /**
+     * @property {array} proteins - The proteins for this comparison
+     */
+    this.proteins = proteins;
+
     return this;
 };
 
 Slider.prototype.render = function() {
     var context = {
         selected: this.selected,
-        proteins: proteins
+        proteins: this.proteins
     };
     this.parent.empty();
     this.el.empty().appendTo(this.parent);

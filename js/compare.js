@@ -27,20 +27,14 @@ var Compare = function(el, proteins) {
 };
 
 Compare.prototype.render = function() {
-    var i, pro;
     this.parent.empty();
     this.el.empty().appendTo(this.parent);
-
-    for (i = 0; i < this.proteins.length; i++) {
-        pro = this.proteins[i];
-
-        this.el.append(this.proteinTemplate(pro));
-    }
+    this.el.append(this.template({proteins: this.proteins}));
 
     $('.comparison-item').css('width', 100/this.proteins.length + '%');
     return this;
 };
 
-Compare.prototype.proteinTemplate = require('./templates/comparison.handlebars');
+Compare.prototype.template = require('./templates/comparison.handlebars');
 
 module.exports = Compare;

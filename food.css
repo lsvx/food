@@ -29,6 +29,17 @@
     width: 50%;
 }
 
+.comparison-back {
+    background-image: url(images/button.png);
+    background-size: cover;
+    bottom: 5%;
+    height: 2em;
+    display: block;
+    position: fixed;
+    right: 5%;
+    width: 2em;
+}
+
 .graphic-image {
     width: 100%;
 }
@@ -44,7 +55,7 @@
 .slider {
     height: 100%;
     left: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 10%;
 }
@@ -56,22 +67,93 @@
     display: block;
     height: 3em;
     left: 50%;
-    opacity: 0.5;
+    margin-left: 1em;
     position: absolute;
     width: 3em;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    transition: all 0.2s;
     z-index: 1;
 }
 
 .slider-avatar--selected {
-    opacity: 1;
     z-index: 2;
 }
 
-.slider-avatar:hover {
+.slider-avatar--selected .slider-icon {
     opacity: 1;
+}
+
+.slider-icon {
+    height: 100%;
+    margin-left: .5em;
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+
+.slider-avatar:hover .slider-icon {
+    opacity: 1;
+}
+
+.comparison-bg {
+    height: 568px;
+    width: 320px;
+}
+
+.slider-axis {
+    background-color: rgba(128, 128, 128, 1);
+    display: block;
+    height: 90%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: .15em;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.slider-axis::after {
+    border-left: 0.25em solid transparent;
+    border-right: 0.25em solid transparent;
+    border-top: .5em solid rgba(128, 128, 128, 1);
+    bottom: 0;
+    content: '';
+    height: 0.5em;
+    left: 0;
+    position: absolute;
+    width: 0.5em;
+    -webkit-transform: translate(-40%, 50%);
+    -moz-transform: translate(-40%, 50%);
+    -o-transform: translate(-40%, 50%);
+    transform: translate(-40%, 50%);
+}
+
+.slider-axis::before {
+    border-left: 0.25em solid transparent;
+    border-right: 0.25em solid transparent;
+    border-bottom: .5em solid rgba(128, 128, 128, 1);
+    content: '';
+    height: 0.5em;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0.5em;
+    -webkit-transform: translate(-40%, -50%);
+    -moz-transform: translate(-40%, -50%);
+    -o-transform: translate(-40%, -50%);
+    transform: translate(-40%, -50%);
+}
+
+.slider-circle {
+    background: #FFF;
+    border-radius: 0.5em;
+    border: .2em solid rgba(128, 128, 128, 1);
+    height: 1em;
+    margin-top: -.5em;
+    position: absolute;
+    top: 50%;
+    width: 1em;
 }
