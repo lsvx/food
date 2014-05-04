@@ -189,7 +189,7 @@ var protein = [
 	    "protein_common_name": "soybean",
 	    "protein_species_name": "Glycine max",
 	    "protein_type_group": "Plant",
-	    "icon": "chicken.png",
+	    "icon": "soybean.png",
 
 	    "protein_nutrient_details":
 			[

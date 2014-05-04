@@ -1,14 +1,21 @@
 .food-choice {
     color: rgb(251, 214, 138);
-    background: rgb(40, 75, 68);
+    background: rgb(40, 75, 68);    
+    min-width: 160px;
+    min-height: 200px;    
+}
+
+.choice-image {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    min-width: 160px;
-    min-height: 160px;    
 }
 
-.food-details {    
+.food-details {        
+}
+
+h2 {
+    font-weight: bold;
 }
 
 .food-ranks {
