@@ -6,10 +6,10 @@ var protein = [
 	// ############################################
 	{
 	    "protein_id": "000001",
-	    "protein_common_name": "Beef",
+	    "protein_common_name": "beef",
 	    "protein_species_name": "Bos primigenius",
 	    "protein_type_group": "Animal, Ruminant",
-        "icon": "chicken.png",
+        "icon": "cow.png",
 
 	    "protein_nutrient_details":
 			[
@@ -36,7 +36,7 @@ var protein = [
 	// ###############################################
 	{
 	    "protein_id": "000002",
-	    "protein_common_name": "Chicken",
+	    "protein_common_name": "chicken",
 	    "protein_species_name": "Gallus gallus domesticus",
 	    "protein_type_group": "Animal, Poultry",
         "icon": "chicken.png",
@@ -66,10 +66,10 @@ var protein = [
 	// ###############################################
 	{
 	    "protein_id": "000003",
-	    "protein_common_name": "Chickpea",
+	    "protein_common_name": "chickpea",
 	    "protein_species_name": "Cicer arietinum",
 	    "protein_type_group": "Plant",
-	    "icon": "chicken.png",
+	    "icon": "chickpea.png",
 
 	    "protein_nutrient_details":
 			[
@@ -96,10 +96,10 @@ var protein = [
 	// ##############################################
 	{
 	    "protein_id": "000004",
-	    "protein_common_name": "Crickets",
+	    "protein_common_name": "crickets",
 	    "protein_species_name": "Gryllidae",
 	    "protein_type_group": "Insect",
-	    "icon": "chicken.png",
+	    "icon": "cricket.png",
 
 	    "protein_nutrient_details":
 			[
@@ -126,7 +126,7 @@ var protein = [
 	// ##########################################
 	{
 	    "protein_id": "000005",
-	    "protein_common_name": "Pork",
+	    "protein_common_name": "pork",
 	    "protein_species_name": "Sus",
 	    "protein_type_group": "Animal",
 	    "icon": "chicken.png",
@@ -156,10 +156,10 @@ var protein = [
 	// ############################################
 	{
 	    "protein_id": "000006",
-	    "protein_common_name": "Salmon",
+	    "protein_common_name": "salmon",
 	    "protein_species_name": "Oncorhynchus tshawytscha",
 	    "protein_type_group": "Fish",
-	    "icon": "chicken.png",
+	    "icon": "salmon.png",
 
 	    "protein_nutrient_details":
 			[
@@ -186,7 +186,7 @@ var protein = [
 	// #############################################
 	{
 	    "protein_id": "000007",
-	    "protein_common_name": "Soybean",
+	    "protein_common_name": "soybean",
 	    "protein_species_name": "Glycine max",
 	    "protein_type_group": "Plant",
 	    "icon": "chicken.png",
@@ -216,7 +216,7 @@ var protein = [
 	// ##################################################
 	{
 	    "protein_id": "000009",
-	    "protein_common_name": "Tuna (Yellowfin)",
+	    "protein_common_name": "tuna (yellowfin)",
 	    "protein_species_name": "Thunnus albacares",
 	    "protein_type_group": "Fish",
 	    "icon": "chicken.png",
