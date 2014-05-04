@@ -1,0 +1,7 @@
+<div class="slider-axis"></div>
+{{#each proteins}}
+<a href="#{{ name }}" data-protein="{{ name }}" class="slider-avatar" style="top: {{ rating }}%;">
+    <div class="slider-circle"></div>
+    <img class="slider-icon" src="{{ icon }}" />
+</a>
+{{/each}}
