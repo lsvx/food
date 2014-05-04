@@ -4,7 +4,7 @@
 .comparison-item {
     display: inline-block;
     vertical-align: top;
-    padding: 0 2em;
+    padding: 0 2em 0 20%;
 }
 
 .comparison-title {
@@ -39,4 +39,39 @@
 
 .center {
     text-align: center;
+}
+
+.slider {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 10%;
+}
+
+.slider-avatar {
+    background-size: cover;
+    border-radius: 1.5em;
+    cursor: pointer;
+    display: block;
+    height: 3em;
+    left: 50%;
+    opacity: 0.5;
+    position: absolute;
+    width: 3em;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all 0.2s;
+    z-index: 1;
+}
+
+.slider-avatar--selected {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slider-avatar:hover {
+    opacity: 1;
 }

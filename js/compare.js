@@ -2,23 +2,25 @@
 var _ = require('lodash'),
     $ = require('jquery');
 /**
-    * Create a new comparison.
-    * @constructor
-    * @param {HTMLNode} el - HTML elememnt to hold the comparison
-    * @param {array} proteins - An array of proteins to compare
-    * @returns a new Compare instance
-    */
+ * Create a new comparison.
+ * @constructor
+ * @param {HTMLNode} el - HTML elememnt to hold the comparison
+ * @param {array} proteins - An array of proteins to compare
+ * @returns a new Compare instance
+ */
 var Compare = function(el, proteins) {
     if (!(this instanceof Compare)) return new Compare(el, proteins);
 
+    this.parent = $(el);
+    $(el).empty();
     /**
-        * @property {object} el - A jQuery element that holds the comparison
-        */
-    this.el = $('<div class="comparison">').appendTo(el);
+     * @property {object} el - A jQuery element that holds the comparison
+     */
+    this.el = $('<div class="comparison">');
 
     /**
-        * @property {array} proteins - The proteins for this comparison
-        */
+     * @property {array} proteins - The proteins for this comparison
+     */
     this.proteins = proteins;
 
     return this.render();
@@ -26,7 +28,8 @@ var Compare = function(el, proteins) {
 
 Compare.prototype.render = function() {
     var i, pro;
-    this.el.empty();
+    this.parent.empty();
+    this.el.empty().appendTo(this.parent);
 
     for (i = 0; i < this.proteins.length; i++) {
         pro = this.proteins[i];
@@ -38,8 +41,6 @@ Compare.prototype.render = function() {
     return this;
 };
 
-Compare.prototype.proteinTemplate = function(protein) {
-    return _.template('<div class="comparison-item"><div class="comparison-head center"><h1 class="comparison-title center"><%- name %></h1><img class="comparison-icon" src="<%- icon %>" /></div><div class="comparison-criterion"><p class="comparison-text center"><span class="comparison-big">$<%- price %></span>per pound</p></div><div class="comparison-criterion"><h3 class="criterion-title">Protein Content</h3><div class="center"><div class="comparison-graphic"><img class="comparison-graph graphic-image" src="<%- graphSRC %>" /><span class="comparison-text graphic-caption"><%- protein %>gr per 100gr</span></div></div><h3 class="criterion-title">Environment</h3><h4>Carbon Emission</h4><p class="comparison-text center"><span class="comparison-big"><%- carbon %></span>kg</p></div></div>', protein);
-};
+Compare.prototype.proteinTemplate = require('./templates/comparison.handlebars');
 
 module.exports = Compare;
