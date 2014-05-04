@@ -3,6 +3,8 @@
     background: rgb(94, 124, 95);    
     min-width: 160px;
     min-height: 200px;    
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 h3, h1, h2 {
@@ -21,7 +23,6 @@ h3, h1, h2 {
 .choice-image {
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
 }
 
 .food-details {        
@@ -41,10 +42,11 @@ h3, h1, h2 {
 
 .choice-left {
     border-right: 5px solid white;
+    background-position: left bottom;
 }
 
-.choice-right {
-    border-left: 5px solid white;
+.choice-right {    
+    background-position: right bottom;
 }
 
 .choice-selected {

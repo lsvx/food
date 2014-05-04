@@ -37,16 +37,13 @@
         <div class="food-options" data-bind="foreach: foodGrid">
             <div class="row food-row">
                 <div data-bind="foreach: $data">
-                    <div class="col-xs-6 food-choice" data-bind="if: $data !== null, click: click, css: { 'choice-left': $index() === 0, 'coice-right': $index() === 1, 'choice-selected': selected }">
+                    <div class="col-xs-6 food-choice" data-bind="if: $data !== null, click: click, css: { 'choice-left': $index() === 0, 'choice-right': $index() === 1 }, style: { 'background-image': 'url(' + $data.data.icon + ')' }">
                         <div class="food-details">
                             <h2 data-bind="text: $data.data.protein_common_name"></h2>
                         </div>
-                        
-                        <div class="choice-image" style="width: 100%; height: 100px" data-bind="style: { 'background-image': 'url(' + $data.data.icon + ')' }"></div>
-                                                
                         <div data-bind="if: selected" style="position: absolute; bottom: 5px; right: 5px">
                             <span class="glyphicon glyphicon-ok"></span>
-                        </div>                        
+                        </div>
                     </div>
                 </div>
             </div>                       

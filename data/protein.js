@@ -216,7 +216,7 @@ var protein = [
 	// ##################################################
 	{
 	    "protein_id": "000009",
-	    "protein_common_name": "tuna)",
+	    "protein_common_name": "tuna",
 	    "protein_species_name": "Thunnus albacares",
 	    "protein_type_group": "Fish",
 	    "icon": "images/white_chicken.png",
