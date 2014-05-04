@@ -1,13 +1,30 @@
 .food-choice {
-    background: gray;
+    color: rgb(251, 214, 138);
+    background: rgb(40, 75, 68);    
+    min-width: 160px;
+    min-height: 200px;    
+}
+
+#information {
+    color: rgb(251, 214, 138);
+}
+
+.title {
+    color: rgb(251, 214, 138);
+    background: rgb(40, 75, 68);   
+}
+
+.choice-image {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    min-width: 160px;
-    min-height: 160px;
 }
 
-.food-details {    
+.food-details {        
+}
+
+h2 {
+    font-weight: bold;
 }
 
 .food-ranks {
@@ -19,19 +36,19 @@
 }
 
 .food-row {
-    border-top: 5px solid red;    
+    border-top: 5px solid white;    
 }
 
 .choice-left {
-    border-right: 5px solid red;
+    border-right: 5px solid white;
 }
 
 .choice-right {
-    border-left: 5px solid red;
+    border-left: 5px solid white;
 }
 
 .choice-selected {
-    background: yellow;
+    background: rgb(27, 42, 42);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
