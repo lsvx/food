@@ -9,7 +9,7 @@ var protein = [
 	    "protein_common_name": "beef",
 	    "protein_species_name": "Bos primigenius",
 	    "protein_type_group": "Animal, Ruminant",
-        "icon": "images/white_cow.png",
+        "icon": "images/cow_crop.png",
 
 	    "protein_nutrient_details":
 			[
@@ -39,7 +39,7 @@ var protein = [
 	    "protein_common_name": "chicken",
 	    "protein_species_name": "Gallus gallus domesticus",
 	    "protein_type_group": "Animal, Poultry",
-        "icon": "images/white_chicken.png",
+        "icon": "images/chicken_crop.png",
 
 	    "protein_nutrient_details":
 			[
@@ -69,7 +69,7 @@ var protein = [
 	    "protein_common_name": "chickpea",
 	    "protein_species_name": "Cicer arietinum",
 	    "protein_type_group": "Plant",
-	    "icon": "images/white_chickpea.png",
+	    "icon": "images/chickpea_crop.png",
 
 	    "protein_nutrient_details":
 			[
@@ -99,7 +99,7 @@ var protein = [
 	    "protein_common_name": "cricket",
 	    "protein_species_name": "Gryllidae",
 	    "protein_type_group": "Insect",
-	    "icon": "images/white_cricket.png",
+	    "icon": "images/cricket_crop.png",
 
 	    "protein_nutrient_details":
 			[
@@ -129,7 +129,7 @@ var protein = [
 	    "protein_common_name": "pork",
 	    "protein_species_name": "Sus",
 	    "protein_type_group": "Animal",
-	    "icon": "images/white_chicken.png",
+	    "icon": "images/pig_crop.png",
 
 	    "protein_nutrient_details":
 			[
@@ -159,7 +159,7 @@ var protein = [
 	    "protein_common_name": "salmon",
 	    "protein_species_name": "Oncorhynchus tshawytscha",
 	    "protein_type_group": "Fish",
-	    "icon": "images/white_salmon.png",
+	    "icon": "images/salmon_crop.png",
 
 	    "protein_nutrient_details":
 			[
@@ -189,7 +189,7 @@ var protein = [
 	    "protein_common_name": "soybean",
 	    "protein_species_name": "Glycine max",
 	    "protein_type_group": "Plant",
-	    "icon": "images/white_soybean.png",
+	    "icon": "images/soybean_crop.png",
 
 	    "protein_nutrient_details":
 			[
@@ -219,7 +219,7 @@ var protein = [
 	    "protein_common_name": "tuna",
 	    "protein_species_name": "Thunnus albacares",
 	    "protein_type_group": "Fish",
-	    "icon": "images/white_chicken.png",
+	    "icon": "images/tuna_crop.png",
 
 	    "protein_nutrient_details":
 			[
