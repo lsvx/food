@@ -1,23 +1,24 @@
 .food-choice {
-    color: rgb(251, 214, 138);
-    background: rgb(40, 75, 68);    
+    color: rgb(219, 220, 221);
+    background: rgb(94, 125, 94);    
     min-width: 160px;
     min-height: 200px;    
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #information {
-    color: rgb(251, 214, 138);
+    color: rgb(219, 220, 221);
 }
 
 .title {
-    color: rgb(251, 214, 138);
-    background: rgb(40, 75, 68);   
+    color: rgb(219, 220, 221);
+    background: rgb(94, 125, 94);    
 }
 
 .choice-image {
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
 }
 
 .food-details {        
@@ -41,10 +42,11 @@ h2 {
 
 .choice-left {
     border-right: 5px solid white;
+    background-position: left bottom;
 }
 
-.choice-right {
-    border-left: 5px solid white;
+.choice-right {    
+    background-position: right bottom;
 }
 
 .choice-selected {
