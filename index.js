@@ -7,7 +7,7 @@ function ChoiceViewModel(parent, data) {
 
     self.click = function() {
         self.selected(!self.selected());
-        window.location.href = 'details.html?' + data.protein_id;
+        window.location.hash = data.protein_common_name;
     };
 };
 
