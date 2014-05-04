@@ -5,6 +5,15 @@
     min-height: 200px;    
 }
 
+#information {
+    color: rgb(251, 214, 138);
+}
+
+.title {
+    color: rgb(251, 214, 138);
+    background: rgb(40, 75, 68);   
+}
+
 .choice-image {
     background-size: contain;
     background-repeat: no-repeat;

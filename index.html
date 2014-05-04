@@ -11,7 +11,14 @@
 </head>
 <body>
     <div class="container-fluid">
-        <h1>PROTEIN GUIDE</h1>
+        <div class="row title">
+            <div class="col-xs-12">
+                <h1>PROTEIN IMPACT INDEX</h1>
+                <h3>What's for dinner?
+                    <a id="information" href="#" class="pull-right"><span class="glyphicon glyphicon-info-sign" data-toggle="modal" data-target="#myModal"></span></a>
+                </h3>
+            </div>
+        </div>
         <div class="food-options" data-bind="foreach: foodGrid">
             <div class="row food-row">
                 <div data-bind="foreach: $data">
@@ -32,6 +39,24 @@
         <div class="row food-row">
         </div>
     </div>    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Information</h4>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere gravida arcu, non iaculis odio dictum sit amet. Nam sed felis odio. Quisque sed molestie enim, at auctor risus. Ut mattis pretium nulla. Sed turpis tellus, interdum venenatis mi vitae, mattis semper nulla. Mauris interdum mollis tortor, pharetra lobortis leo sollicitudin in. Mauris eget ultrices neque. Donec sapien turpis, pellentesque et ultrices vel, volutpat in eros. Donec facilisis venenatis justo eget eleifend. Aliquam felis nisi, aliquet sed orci ut, consequat fermentum libero. Aenean ultricies ut nisi id tempus. Cras vel est ac risus accumsan tempus.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="jquery-2.1.1.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>

@@ -7,6 +7,7 @@ function ChoiceViewModel(parent, data) {
 
     self.click = function() {
         self.selected(!self.selected());
+        window.location.href = 'details.html?' + data.protein_id;
     };
 };
 
@@ -16,6 +17,10 @@ function IndexViewModel() {
     self.choiceModels = ko.computed(function() {
         var foodChoices = protein;
         var choices = [];
+
+        foodChoices.sort(function(a, b) {
+            return a.protein_common_name.localeCompare(b.protein_common_name)
+        });
 
         for (var i = 0; i < foodChoices.length; i++) {
             choices.push(new ChoiceViewModel(self, foodChoices[i]));
@@ -46,13 +51,7 @@ function IndexViewModel() {
         }
 
         return selections;
-    });
-
-    self.choiceMade.subscribe(function(newValue) {
-        if (newValue.length === 2) {
-            window.location.href = 'details.html';
-        }
-    });
+    });    
 }
 
 ko.applyBindings(new IndexViewModel());
